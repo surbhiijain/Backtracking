@@ -5,6 +5,8 @@
  */
 package backtracking;
 
+import java.util.Arrays;
+
 /**
  *
  * @author tosur
@@ -105,5 +107,11 @@ public class Board {
         }
         return checkSet(set, this.getLeftConstraint(col), this.getRightConstraint(col));
 
+    }
+
+    public void print() {
+        for (int row = 0; row < size; row++) {
+            System.out.println(Arrays.toString(board[row]));
+        }
     }
 }
